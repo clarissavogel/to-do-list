@@ -1,31 +1,13 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-    background-color: #202024;
+    background-color: gray;
+    border:2px solid black ;
     border-radius: 8px;
     padding: 2.5rem;
     margin-bottom: 30px;
     gap: 1rem;
 
-    header {
-        display: flex;
-        align-items: center;
-
-        img {
-            width: 3rem;
-            height: 3rem;
-            border-radius: 8px;
-            border: 4px solid #202024;
-            outline: 2px solid #00875f;
-            
-        }
-
-        strong {
-            line-height: 1.6;
-            color: #e1e1e6;
-            margin-left: 1rem;
-        }
-    }
 `;
 
 export const Content = styled.div`
@@ -43,19 +25,20 @@ export const Form = styled.form`
 
     strong {
         line-height: 1.6;
-        color: #e1e1e6
+        font-size: 1.2em;
+        color: white
     }
 
     textarea {
         width: 100%;
         resize: none;
-        background-color: #121214;
+        background-color: #e1e1e6;
         border: 0;
         border-radius: 8px;
         height: 3.5rem;
         padding: 1rem;
         margin-top: 1rem;
-        color: #e1e1e6;
+        color: #121214;
         line-height: 1.4;
     }
 
@@ -64,6 +47,7 @@ export const Form = styled.form`
         margin-top: 1rem;
         border-radius: 8px;
         border: 0;
+        width: 100%;
         background-color: #00875f;
         color: white;
         transition: background-color 0.5s;

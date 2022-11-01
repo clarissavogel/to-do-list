@@ -6,7 +6,7 @@ import { Container, Content } from "./styled"
 export function Home(){
     return (
         <Container>
-            <h1>To do list</h1>
+            <h1>MINHA TO DO LIST</h1>
             <Content>
                 {taskArray.map(task =>{
                     return(

@@ -36,12 +36,6 @@ function deleteTask(id){
 
 return(
     <Container>
-        <header>
-            <p>Minhas tarefas</p>
-        </header>
-
-
-
         <Form onSubmit={handleCreateNewTask}>
             <strong>Crie uma nova tarefa</strong>
             <textarea

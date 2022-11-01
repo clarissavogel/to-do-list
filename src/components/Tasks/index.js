@@ -1,8 +1,8 @@
 import { useState } from 'react'
 import { Trash } from 'phosphor-react'
-import { Container } from "./styled";
+import { Content, Container } from "./styled";
 
-export function Tasks({ task, onDeleteTask, props, toggle}){
+export function Tasks({ task, onDeleteTask}){
 
     function handleDeleteTask(){
         onDeleteTask(task.id)
@@ -14,15 +14,14 @@ export function Tasks({ task, onDeleteTask, props, toggle}){
 
     return(
         <Container>
-            <p>{task.content}
-            </p>
+            <Content>
+            <input onClick={handleCheckTask} type="checkbox"/>
+            <p>{task.content}</p>
+            </Content>
             <button onClick={handleDeleteTask} title= "Deletar tarefa">
             <Trash size={24} />
             </button>   
-            <input onClick={handleCheckTask} type="checkbox"></input>
+
         </Container>
-
     )
-
-
 }

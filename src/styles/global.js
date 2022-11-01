@@ -8,15 +8,15 @@ export const GlobalStyle = createGlobalStyle`
     }
 
     body {
-        background-color: #121214;
-        color: #c4c4cc;
-        -webkit-font-smoothing: antialiased; //so funciona no MacOS
+        background-color: #e1e1e6;
+        color: black;
+        -webkit-font-smoothing: antialiased; 
     }
 
     body, input, textarea, button {
-        font-family: 'Roboto', sans-serif;
+        font-family: 'Merriweather', serif;
         font-weight: 400;
-        font-size: 1rem; //16px
+        font-size: 1rem; 
     }
 
     input, textarea, button {
